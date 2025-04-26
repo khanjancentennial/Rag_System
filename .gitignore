@@ -1,0 +1,74 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+env/
+venv/
+myvenv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Cache and coverage
+.cache/
+.coverage
+htmlcov/
+.tox/
+nox/
+
+# Mypy, Pytype, Pyre type checker
+.mypy_cache/
+.pytype/
+.pyre/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# dotenv environment files
+.env
+.env.*
+
+# LangChain cache or memory stores
+.cache/
+
+# ChromaDB or FAISS vector database folders
+chroma/
+chromadb/
+faiss_index/
+*.faiss
+*.hnsw
+
+# Huggingface Transformers cache
+~/.cache/huggingface/
+huggingface/
+
+# Model files (optional: if you save models locally)
+*.ckpt
+*.pt
+*.bin
+
+# Temporary files
+*.log
+*.tmp
+
+# Python logs
+logs/
+*.log

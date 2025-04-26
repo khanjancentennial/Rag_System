@@ -1,0 +1,30 @@
+from rest_framework import serializers
+from .models import File, User, FaissFile
+
+class FileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = File
+        fields = ['id', 'file_path' , 'file_name', 'uploaded_at']
+
+class FaissFileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = FaissFile
+        fields = ['id', 'faiss_index_path', 'index_id']
+
+
+class UserSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(write_only=True)
+
+    class Meta:
+        model = User
+        fields = ["id", "username", "password"]
+
+    def create(self, validated_data):
+        user = User.objects.create_user(
+            username=validated_data["username"],
+            password=validated_data["password"],
+        )
+        return user
+    
+class QueryRequestSerializer(serializers.Serializer):
+    question = serializers.CharField()
