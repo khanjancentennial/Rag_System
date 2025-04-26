@@ -75,13 +75,13 @@ Thumbs.db
 # =================== React Frontend (my-app) ===================
 
 # dependencies
-frontend/node_modules/
+frontend/my-app/node_modules/
 node_modules/
 .pnp/
 .pnp.js
 
 # production build
-frontend/build/
+frontend/my-app/build/
 build/
 
 # testing coverage
