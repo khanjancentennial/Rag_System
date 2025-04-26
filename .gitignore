@@ -1,3 +1,5 @@
+# =================== Python Backend ===================
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -32,20 +34,6 @@ nox/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# System files
-.DS_Store
-Thumbs.db
-
-# IDE and Editor folders
-.vscode/
-.idea/
-*.sublime-workspace
-*.sublime-project
-
-# dotenv environment files
-.env
-.env.*
-
 # LangChain cache or memory stores
 .cache/
 
@@ -57,18 +45,57 @@ faiss_index/
 *.hnsw
 
 # Huggingface Transformers cache
-~/.cache/huggingface/
 huggingface/
+~/.cache/huggingface/
 
-# Model files (optional: if you save models locally)
+# Model files (optional if saving models locally)
 *.ckpt
 *.pt
 *.bin
 
-# Temporary files
+# Temporary files and logs
+logs/
 *.log
 *.tmp
 
-# Python logs
-logs/
-*.log
+# dotenv environment files
+.env
+.env.*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# =================== React Frontend (my-app) ===================
+
+# dependencies
+frontend/node_modules/
+node_modules/
+.pnp/
+.pnp.js
+
+# production build
+frontend/build/
+build/
+
+# testing coverage
+coverage/
+
+# dotenv environment files for React
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
+
+# misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+

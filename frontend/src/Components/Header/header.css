@@ -1,0 +1,33 @@
+/* src/components/Header/Header.css */
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .home-header h2 {
+    margin: 0;
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  .logout-button svg {
+    margin-right: 8px;
+    font-size: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+  }

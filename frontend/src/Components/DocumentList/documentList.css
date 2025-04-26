@@ -1,0 +1,147 @@
+/* src/components/DocumentList/documentList.css */
+.document-list {
+    width: 500px;
+    min-width: 500px;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+    height: 100%;
+    flex-shrink: 0;
+  }
+  
+  .file-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .file-item {
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .file-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .file-actions {
+    display: flex;
+  }
+  
+  .file-actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    color: #333;
+  }
+  
+  .file-actions button.edit svg {
+    font-size: 2.0em;
+    color:#007bff;
+  }
+  .file-actions button.delete svg {
+    font-size: 2.0em;
+    color:#ff0000;
+  }
+  
+  .edit-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .edit-dialog {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  }
+  
+  .edit-dialog h3 {
+    margin-top: 0;
+  }
+  
+  .edit-dialog input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  .edit-dialog button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-dialog button:last-child {
+    margin-right: 0;
+  }
+  
+  .edit-dialog button:first-child {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .edit-dialog button:last-child {
+    background-color: #ccc;
+  }
+  
+  .upload-section {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+  }
+  
+  .upload-options {
+      margin-top: 10px;
+  }
+  
+  .upload-options input[type="file"] {
+      margin-bottom: 10px;
+  }
+  
+  .upload-options button {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 5px;
+  }
+
+  .upload-options button.cancel{
+    padding: 8px 16px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+  .loader {
+      text-align: center;
+      margin: 10px 0;
+  }
+
+  .edit-dialog button.delete-yes {
+    background-color: green;
+    color: white;
+  }
+
+  .edit-dialog button.delete-no {
+    background-color: #ff0000;
+    color: white;
+  }
