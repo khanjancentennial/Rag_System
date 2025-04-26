@@ -36,7 +36,7 @@ from .serializers import FileSerializer, UserSerializer, FaissFileSerializer,Que
 
 
 # Google Gemini API Key
-GOOGLE_API_KEY = "AIzaSyBJBdDpASbYxvTqKa81OuyQWkshThjHnqA"
+GOOGLE_API_KEY = "AYOUR_API_KEY"
 
 # Upload directory
 UPLOAD_DIR = os.path.join(settings.MEDIA_ROOT, "uploaded_files")
